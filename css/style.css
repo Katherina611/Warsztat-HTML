@@ -29,7 +29,7 @@ header{
     background-color: black;
     color:white;
     padding:10px 0;
-    width:1200px;
+    max-width:1200px;
     margin:0 auto;
 }
 .container{
@@ -74,9 +74,12 @@ h1{
     padding-top:20px;
     display:none;
 }
+/*
 li:hover>.submenu{
     display:block;
 }
+*/
+
 .submenu::before {
     content: '';
     display: block;
@@ -104,11 +107,38 @@ article>div{
 }
 
 .background{
+    /*
     background-image:url("./../images/black_chair.png");
     background-repeat: no-repeat;
     float: left;
+    */
     background-size: 102%,102%;
     position:relative;
+
+}
+.background img{
+    display: none;
+}
+.background .visible{
+    display:inline-block;
+    position:absolute;
+    left:150px;
+}
+.slider2{
+    position:absolute;
+    top:100px;
+}
+.slider3{
+    position:absolute;
+    top:130px;
+    height:250px;
+    width:250px;
+}
+
+
+button{
+    background-color: transparent;
+    border:transparent;
 }
 .sign{
     font-size:73px;
@@ -130,7 +160,7 @@ article>div{
 }
 
 .main{
-    width:1200px;
+    max-width:1200px;
     margin:0 auto;
     height:505px;
     padding-top: 50px;
@@ -181,7 +211,7 @@ article>div{
     text-align: center;
 }
 .gallery{
-    width:1070px;
+    max-width:1070px;
     margin:0 auto;
     font-family:"ralewayregular";
 }
@@ -285,7 +315,7 @@ article>div{
 }
 .price_list{
     background-color: #F1F1F1;
-    width:1200px;
+    max-width:1200px;
     margin:0 auto;
 }
 .price{
@@ -723,7 +753,7 @@ textarea{
 }
 footer{
     margin: 0 auto;
-    width:1070px;
+    max-width:1070px;
 }
 .footer{
     margin-top: 40px;
